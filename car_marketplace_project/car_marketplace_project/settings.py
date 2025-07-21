@@ -88,8 +88,6 @@ DATABASES = {
 }
  
 
-# Password validation
-# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -107,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Internationalization
-# https://docs.djangoproject.com/en/5.2/topics/i18n/
+
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Asia/Kolkata' 
@@ -188,17 +186,4 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",   # Another common local IP for your frontend
 ]
 
-# During development, you might temporarily allow all origins for quick testing.
-# However, this is INSECURE and MUST be set to False in production.
-# CORS_ALLOW_ALL_ORIGINS = True # Keep this commented out if you are using CORS_ALLOWED_ORIGINS
-
-# If you were to deploy to a specific domain, you'd add it here, e.g.:
-# "https://your-frontend-domain.com",
-# "https://www.your-frontend-domain.com",
-
-# For debugging purposes, you might want to log CORS headers
-# CORS_ORIGIN_WHITELIST = [] # Deprecated, use CORS_ALLOWED_ORIGINS instead
-# CORS_URLS_REGEX = r"^/api/.*$" # If you only want CORS on specific URLs
-
-# SITE_ID for django.contrib.sites (used by some auth packages, like allauth)
 SITE_ID = 1
